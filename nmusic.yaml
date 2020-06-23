@@ -32,6 +32,10 @@ Proxy:
   type: http
   server: taron.top
   port: 100
+- name: yrh解锁
+  type: http
+  server: 49.232.105.222
+  port: 61122
 
 Proxy Group:
 - name: "Netease Music"
@@ -40,6 +44,7 @@ Proxy Group:
     - 深度解锁
     - griouges解锁
     - taron解锁
+    - yrh解锁
     - DIRECT
 
 Rule:
