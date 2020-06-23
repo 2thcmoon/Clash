@@ -20,15 +20,15 @@ dns:
 
 
 Proxy:
-- name: 深度
+- name: 深度解锁
   type: http
   server: unblockmusic.yjs2635.xyz
   port: 60999
-- name: griouges
+- name: griouges解锁
   type: http
   server: music.griouges.cn
   port: 39000
-- name: taron
+- name: taron解锁
   type: http
   server: taron.top
   port: 100
@@ -37,9 +37,9 @@ Proxy Group:
 - name: "Netease Music"
   type: select
   proxies: 
-    - 深度
-    - griouges
-    - taron
+    - 深度解锁
+    - griouges解锁
+    - taron解锁
     - DIRECT
 
 Rule:
