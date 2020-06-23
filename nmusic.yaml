@@ -34,8 +34,8 @@ Proxy:
   port: 100
 - name: yrh解锁
   type: http
-  server: 49.232.105.222
-  port: 61122
+  server: 123.57.3.45
+  port: 6666 
 
 Proxy Group:
 - name: "Netease Music"
