@@ -28,14 +28,23 @@ Proxy:
   type: http
   server: music.griouges.cn
   port: 39000
+  username: ""
+  password: ""
+  tls: false
 - name: taron解锁
   type: http
   server: taron.top
   port: 100
+  username: ""
+  password: ""
+  tls: false
 - name: yrh解锁
   type: http
   server: 123.57.3.45
-  port: 6666 
+  port: 6666
+  username: ""
+  password: ""
+  tls: false 
 
 Proxy Group:
 - name: "Netease Music"
