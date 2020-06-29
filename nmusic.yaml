@@ -1,6 +1,4 @@
-port: 7890
-
-socks-port: 7891
+mixed-port: 7890
 
 allow-lan: false
 
@@ -20,6 +18,18 @@ dns:
 
 
 Proxy:
+- name: WA如风解锁
+  type: ss
+  server: music.desperadoj.com
+  port: 30001
+  cipher: aes-128-gcm
+  password: desperadoj.com_free_proxy_x80j
+- name: MIL如风解锁
+  type: ss
+  server: music.desperadoj.com
+  port: 30003
+  cipher: aes-128-gcm
+  password: desperadoj.com_free_proxy_x80j
 - name: 深度解锁
   type: http
   server: unblockmusic.yjs2635.xyz
@@ -49,7 +59,9 @@ Proxy:
 Proxy Group:
 - name: "Netease Music"
   type: select
-  proxies: 
+  proxies:
+    - WA如风解锁
+    - MIL如风解锁
     - 深度解锁
     - griouges解锁
     - taron解锁
