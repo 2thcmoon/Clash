@@ -6,17 +6,9 @@ log-level: info
 external-controller: '127.0.0.1:6170'
 secret: ''
 dns:
-  enable: true
-  ipv6: false
-  listen: '0.0.0.0:5353'
-  enhanced-mode: fake-ip
-  default-nameserver:
-    - 119.29.29.29
-    - 119.28.28.28
-  fake-ip-filter:
-    - '*.lan'
-    - localhost.ptlogin2.qq.com
-  nameserver:
-    - 'https://doh.rixcloud.dev/dns-query'
-    - 'https://47.108.56.233/dns-query'
-    - 'https://118.31.13.131/dns-query'
+   enable: true
+   enhanced-mode: redir-host # 或 fake-ip
+   listen: 0.0.0.0:5353
+   nameserver:
+      - 223.5.5.5
+      - 8.8.8.8
