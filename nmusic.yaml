@@ -23,13 +23,13 @@ Proxy:
   server: music.desperadoj.com
   port: 30001
   cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_x80j
+  password: desperadoj.com_free_proxy_vrfn
 - name: MIL如风解锁
   type: ss
   server: music.desperadoj.com
   port: 30003
   cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_x80j
+  password: desperadoj.com_free_proxy_vrfn
 - name: shendu解锁
   type: http
   server: unblockmusic.yjs2635.xyz
