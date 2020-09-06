@@ -18,50 +18,22 @@ dns:
 
 
 Proxy:
-- name: WA如风解锁
+- name: 如风解锁
   type: ss
   server: music.desperadoj.com
   port: 30001
   cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_vrfn
-- name: MIL如风解锁
-  type: ss
-  server: music.desperadoj.com
-  port: 30003
-  cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_vrfn
+  password: desperadoj.com_free_proxy_emx2
 - name: shendu解锁
   type: http
   server: unblockmusic.yjs2635.xyz
   port: 60999
-- name: griouges解锁
-  type: http
-  server: music.griouges.cn
-  port: 39000
-  username: ""
-  password: ""
-  tls: false
-- name: taron解锁
-  type: http
-  server: taron.top
-  port: 100
-  username: ""
-  password: ""
-  tls: false
-- name: yrh解锁
-  type: http
-  server: 123.57.3.45
-  port: 6666
-  username: ""
-  password: ""
-  tls: false 
 
 Proxy Group:
 - name: "Netease Music"
   type: select
   proxies:
-    - WA如风解锁
-    - MIL如风解锁
+    - 如风解锁
     - shendu解锁
     - griouges解锁
     - taron解锁
