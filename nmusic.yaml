@@ -30,7 +30,6 @@ Proxy Group:
   type: select
   proxies:
     - 如风解锁
-    - shendu解锁
     - DIRECT
 
 Rule:
