@@ -24,10 +24,6 @@ Proxy:
   port: 30001
   cipher: aes-128-gcm
   password: desperadoj.com_free_proxy_emx2
-- name: 深度音乐解锁
-  type: http
-  server: unblockmusic.yjs2635.xyz
-  port: 60999
 
 Proxy Group:
 - name: "Netease Music"
