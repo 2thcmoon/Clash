@@ -1,82 +1,18 @@
-mixed-port: 7890
+# URL:     https://raw.githubusercontent.com/DesperadoJ/Rules-for-UnblockNeteaseMusic/master/Clash/Proxy/NeteaseMusic.yaml
+# Project: https://github.com/DesperadoJ/Rules-for-UnblockNeteaseMusic
+# Note:    This proxy is for free, please complain the seller if you were charged
+#          本代理完全免费，如遇收费请投诉举报卖家
 
-allow-lan: false
-
-mode: Rule
-
-log-level: silent
-
-external-controller: 127.0.0.1:9090
-
-dns:
-  enable: true
-  listen: 0.0.0.0:53
-  enhanced-mode: fake-ip
-  nameserver:
-   - 119.29.29.29
-   - 223.5.5.5
-
-
-Proxy:
-- name: 如风音乐解锁
-  type: ss
-  server: music.desperadoj.com
-  port: 30001
-  cipher: aes-128-gcm
-  password: desperadoj.com_free_proxy_d39m
-
-Proxy Group:
-- name: "Netease Music"
-  type: select
-  proxies:
-    - 如风解锁
-    - DIRECT
-
-Rule:
-# Unblock Netease Music
-- DOMAIN,api.iplay.163.com,Netease Music
-- DOMAIN,apm3.music.163.com,Netease Music
-- DOMAIN,apm.music.163.com,Netease Music
-- DOMAIN,interface3.music.163.com,Netease Music
-- DOMAIN,interface.music.163.com,Netease Music
-- DOMAIN,music.163.com,Netease Music
-
-#- DOMAIN,httpdns.n.netease.com,REJECT
-- DOMAIN-SUFFIX,163yun.com,Netease Music
-- DOMAIN-SUFFIX,music.126.net,Netease Music
-- DOMAIN-SUFFIX,mam.netease.com,Netease Music
-- DOMAIN-SUFFIX,hz.netease.com,Netease Music
-
-# CIDR规则
-- IP-CIDR,39.105.63.80/32,Netease Music
-- IP-CIDR,45.254.48.1/32,Netease Music
-- IP-CIDR,47.100.127.239/32,Netease Music
-- IP-CIDR,59.111.160.195/32,Netease Music
-- IP-CIDR,59.111.160.197/32,Netease Music
-- IP-CIDR,59.111.181.35/32,Netease Music
-- IP-CIDR,59.111.181.38/32,Netease Music
-- IP-CIDR,59.111.181.60/32,Netease Music
-- IP-CIDR,101.71.154.241/32,Netease Music
-- IP-CIDR,103.126.92.132/32,Netease Music
-- IP-CIDR,103.126.92.133/32,Netease Music
-- IP-CIDR,112.13.119.17/32,Netease Music
-- IP-CIDR,112.13.122.1/32,Netease Music
-- IP-CIDR,115.236.118.33/32,Netease Music
-- IP-CIDR,115.236.121.1/32,Netease Music
-- IP-CIDR,118.24.63.156/32,Netease Music
-- IP-CIDR,193.112.159.225/32,Netease Music
-- IP-CIDR,223.252.199.66/32,Netease Music
-- IP-CIDR,223.252.199.67/32,Netease Music
-
-- IP-CIDR,59.111.21.14/32,Netease Music
-- IP-CIDR,59.111.179.214/32,Netease Music
-- IP-CIDR,59.111.238.29/32,Netease Music
-
-# Advertising
-- DOMAIN,admusicpic.music.126.net,REJECT
-- DOMAIN,iadmat.nosdn.127.net,REJECT
-- DOMAIN,iadmusicmat.music.126.net,REJECT
-- DOMAIN,iadmusicmatvideo.music.126.net,REJECT
-
-# Final
-- MATCH,DIRECT
+proxies:
+  - name: 🎶 解锁
+    type: ss
+    server: music.desperadoj.com
+    port: 30001
+    cipher: aes-128-gcm
+    password: desperadoj.com_free_proxy_d39m
+  - name: ‼️ 免费代理，遇收费请举报
+    type: ss
+    server: 127.0.0.1
+    port: 8080
+    cipher: aes-128-gcm
+    password: This_proxy_is_for_free
