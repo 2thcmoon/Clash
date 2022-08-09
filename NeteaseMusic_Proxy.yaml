@@ -5,3 +5,7 @@ proxies:
     port: 30001
     cipher: aes-128-gcm
     password: desperadoj.com_free_proxy_etg0
+  - name: 🎵音乐解锁(本地)
+    type: http
+    server: 10.0.0.1
+    port: 5200
